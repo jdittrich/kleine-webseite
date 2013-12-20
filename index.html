@@ -1,4 +1,64 @@
-<h2>hello world!</h2>
-foobar
+<!DOCTYPE html>
+<html>
+  
+<!-- hier nur metadaten  -->
+  <head>
+    <title>hallo</title>
+    <style>
+      /* style den body*/
+      body {
+        font-size: 2em;
+        font-family: sans-serif;
+        background: lightsalmon;
+        color: white;
+        text-align:center;
+      }
+      p {
+        background: fuchsia;
+      }
+      /* auflistung! */
+      ol, ul {
+        background: teal;
+      }
+      /* verschachtelung! */
+      ol p {
+        background:green;
+      }
+      .haupt {
+        font-family:cursive;
+      }
+      .vollebreite {
+        width: 100%;
+      }
+    </style>
+  </head>
+  
+<!--
+  hier der eigentliche inhalt der seite
+-->
+<body>
+  <h1 class="haupt">hello world</h1>
+  <p>ein bisschen text mit Umläuten</p>
+  
+  <img class="vollebreite" src="http://static.giantbomb.com/uploads/original/1/17172/1419618-unicorn2.jpg">
 
-hallo
+  <h1>hallo liste</h1>
+<ol>
+    <li>
+      ein 
+      <strong class="haupt">
+        listenpunkt
+      </strong>
+    </li>
+    <li>
+      <p>
+        noch ein <em>weiterer</em> listenpunkt
+      </p>
+    </li>
+    <li>
+      <a href="http://google.de">Ein Link</a>
+    </li>
+  </ol>
+</body>
+  
+</html>
