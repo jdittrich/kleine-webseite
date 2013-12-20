@@ -1,49 +1,70 @@
 <!DOCTYPE html>
 <html>
+<!-- das ist ein kommentar  -->
   
-<!-- hier nur metadaten  -->
+<!-- hier sind nur metadaten:  -->
   <head>
+    <!--  setze den titel der seite, nicht auf der seite selbst sichtbar!  -->
     <title>hallo</title>
+    
+    <!--  Wichtig! Damit Sonderzeichen nicht kaputt gehen (Unicode)  -->
+    <meta charset="utf-8">
+    
+    <!-- komisches apple zeug: mache die seite so breit wie das iPhone/iPad… 
+         (weniger zoomen)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <style>
-      /* style den body*/
+      /* style das element "body" */
       body {
         font-size: 2em;
         font-family: sans-serif;
         background: lightsalmon;
         color: white;
-        text-align:center;
+        text-align: center;
       }
+      /* style alle "p" elemente */
       p {
         background: fuchsia;
       }
-      /* auflistung! */
+      /* auflistung! alle "ol" elemente UND alle "ul" elemente */
       ol, ul {
         background: teal;
       }
-      /* verschachtelung! */
+      /* verschachtelung! alle "p" elemente IN "ol" elementen */
       ol p {
         background:green;
       }
+      /* Klasse! alle emlemente mit klasse "haupt" */
       .haupt {
         font-family:cursive;
       }
-      .vollebreite {
-        width: 100%;
+      /* alle "img" emlemente mit klasse "zentriert" */
+      img.zentriert {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
       }
     </style>
   </head>
   
 <!--
-  hier der eigentliche inhalt der seite
+  hier der eigentliche inhalt der seite:
 -->
 <body>
+  <!--  ein "h1" element mit der klasse "haupt"-->
   <h1 class="haupt">hello world</h1>
   <p>ein bisschen text mit Umläuten</p>
   
-  <img class="vollebreite" src="http://static.giantbomb.com/uploads/original/1/17172/1419618-unicorn2.jpg">
+  <!-- ein "img element" mit der klasse "zentriert",
+       die "src" eigenschaft definiert den link zur bild-datei -->
+  <img class="zentriert" src="http://static.giantbomb.com/uploads/original/1/17172/1419618-unicorn2.jpg">
 
-  <h1>hallo liste</h1>
-<ol>
+  <!-- ein "h2" element - Überschrift 2. Ordnung-->
+  <h2>hallo liste</h2>
+  <!-- eine sortierte (Ordered) Liste -->
+  <ol>
+    <!-- ein List Item -->
     <li>
       ein 
       <strong class="haupt">
@@ -56,6 +77,9 @@
       </p>
     </li>
     <li>
+      <!-- ein link :)
+           die "href" eigenschaft definiert das ziel des links
+           (Hypertext REFerence)  --> 
       <a href="http://google.de">Ein Link</a>
     </li>
   </ol>
