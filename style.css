@@ -1,0 +1,30 @@
+/* style das element "body" */
+body {
+  font-size: 2em;
+  font-family: sans-serif;
+  background: lightsalmon;
+  color: white;
+  text-align: center;
+}
+/* style alle "p" elemente */
+p {
+  background: fuchsia;
+}
+/* auflistung! alle "ol" elemente UND alle "ul" elemente */
+ol, ul {
+  background: teal;
+}
+/* verschachtelung! alle "p" elemente IN "ol" elementen */
+ol p {
+  background:green;
+}
+/* Klasse! alle emlemente mit klasse "haupt" */
+.haupt {
+  font-family:cursive;
+}
+/* alle "img" emlemente mit klasse "zentriert" */
+img.zentriert {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
