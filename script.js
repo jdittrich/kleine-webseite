@@ -32,7 +32,11 @@ function errechneBesuchsdauer() {
 }
 
 function zeigeBesuchsdauer() {
-  console.log(errechneBesuchsdauer());
+  if ($) {
+    $('#counter').text(errechneBesuchsdauer());
+  } else {
+    console.log("Fehler! Kein jQuery :(");
+  }
 }
 
 // -------------------------------------------
