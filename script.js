@@ -38,12 +38,17 @@ function zeigeBesuchsdauer() {
 // -------------------------------------------
 // hier beginnt das programm, d.h. es werden funktionen ausgeführt
 
-// zuerst eine einebaute funktion des browsers: eine meldungs(/alert)-box
-alert("hello world");
+// jQuery: führe diesen block erst aus wenn die seite fertig geladen ist:
+$(document).ready(function () {
+  
+  // zuerst eine einebaute funktion des browsers: eine meldungs(/alert)-box
+  alert("hello world");
 
-// rufe unsere eigene funktion auf und setze die startzeit
-setzeStartzeit();
+  // rufe unsere eigene funktion auf und setze die startzeit
+  setzeStartzeit();
 
-// mache einen loop, der jede sekunde die funktion "zeige besuchsdauer" aufruft
-// (wir rufen die eingebaute funktion setInterval auf, mit den argumenten funktion und zeit)
-setInterval(zeigeBesuchsdauer, 1000);
+  // mache einen loop, der jede sekunde die funktion "zeige besuchsdauer" aufruft
+  // (wir rufen die eingebaute funktion setInterval auf, mit den argumenten funktion und zeit)
+  setInterval(zeigeBesuchsdauer, 1000);
+
+});
