@@ -46,7 +46,7 @@ function zeigeBesuchsdauer() {
 $(document).ready(function () {
   
   // zuerst eine einebaute funktion des browsers: eine meldungs(/alert)-box
-  alert("hello world");
+  // alert("hello world");
 
   // rufe unsere eigene funktion auf und setze die startzeit
   setzeStartzeit();

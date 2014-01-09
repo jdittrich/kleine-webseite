@@ -2,17 +2,18 @@
 body {
   font-size: 2em;
   font-family: sans-serif;
-  background: lightsalmon;
+  background: gray;
   color: white;
   text-align: center;
 }
 /* style alle "p" elemente */
 p {
-  background: fuchsia;
+  background: lightgray;
 }
 /* auflistung! alle "ol" elemente UND alle "ul" elemente */
 ol, ul {
-  background: teal;
+  color: teal;
+  background: lightgray;
 }
 /* verschachtelung! alle "p" elemente IN "ol" elementen */
 ol p {
@@ -27,4 +28,30 @@ img.zentriert {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* für das spiel:*/
+
+body > * {
+  padding: 0.5em;
+  margin: 0.5em 0;
+}
+
+#playThings, #playThings li, #playThings li a {
+  list-style: none;
+  color: teal;
+}
+
+#result {
+  height: 7em;
+}
+
+#result, #result * {
+  font-family: monospace;
+  background-color: teal;
+}
+
+footer {
+  margin-top: 1em;
+  font-size: 0.6em;
 }

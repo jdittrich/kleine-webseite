@@ -5,7 +5,7 @@
 <!-- hier sind nur metadaten:  -->
   <head>
     <!--  setze den titel der seite, nicht auf der seite selbst sichtbar!  -->
-    <title>hallo</title>
+    <title>Stein-Schere-Papier</title>
     
     <!--  Wichtig! Damit Sonderzeichen nicht kaputt gehen (Unicode)  -->
     <meta charset="utf-8">
@@ -28,6 +28,7 @@
 
     <!-- Javascript, in extra datei -->
     <script src="script.js" type="text/javascript"></script>
+    <script src="game.js" type="text/javascript"></script>
 
   </head>
   
@@ -36,38 +37,32 @@
 -->
 <body>
   <!--  ein "h1" element mit der klasse "haupt"-->
-  <h1 class="haupt">hello world</h1>
-  <p>Du bist schon so viele Sekunden auf der Seite:
-    <kbd id="counter">0</kbd>
-  </p>
+  <h1 class="haupt">Stein-Schere-Papier</h1>
   
-  <!-- ein "img element" mit der klasse "zentriert",
-       die "src" eigenschaft definiert den link zur bild-datei -->
-  <img class="zentriert" src="http://static.giantbomb.com/uploads/original/1/17172/1419618-unicorn2.jpg">
+  <p>Wähle deinen Move:</p>
 
-  <!-- ein "h2" element - Überschrift 2. Ordnung-->
-  <h2>hallo liste</h2>
-  <!-- eine sortierte (Ordered) Liste -->
-  <ol>
-    <!-- ein List Item -->
-    <li>
-      ein 
-      <strong class="haupt">
-        listenpunkt
-      </strong>
-    </li>
-    <li>
-      <p>
-        noch ein <em>weiterer</em> listenpunkt
-      </p>
-    </li>
-    <li>
-      <!-- ein link :)
-           die "href" eigenschaft definiert das ziel des links
-           (Hypertext REFerence)  --> 
-      <a href="http://google.de">Ein Link</a>
-    </li>
-  </ol>
+  <!-- Liste der Spielfiguren -->
+  <ul id="playThings">
+    <li><button class="rock">STEIN</button></li>
+    <li><button class="scissors">SCHERE</button></li>
+    <li><button class="paper">PAPER</button></li>
+  </ul>
+  
+  <div id="result">
+    <p class="message">Click to Play!</p>
+    <p><strong>SCORE</strong><br>
+      HUMAN : COMPUTER<br>
+      <span class="score">0 : 0</span>
+    </p>
+  </div>
+  
+  <textarea disabled id="log" name="log" rows="8" cols="60">
+  </textarea>
+
+  <footer>Du bist schon so viele Sekunden auf der Seite:
+    <kbd id="counter">0</kbd>
+  </footer>
+
 </body>
   
 </html>
