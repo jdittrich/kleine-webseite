@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <style>
-      /* style das element "body" */
+      /* style das element "body" (<body> im html)*/
       body {
         font-size: 2em;
         font-family: sans-serif;
@@ -27,15 +27,15 @@
       p {
         background: fuchsia;
       }
-      /* auflistung! alle "ol" elemente UND alle "ul" elemente */
+      /* auflistung! alle "ol" elemente UND (UND = ein ",") alle "ul" elemente */
       ol, ul {
         background: teal;
       }
-      /* verschachtelung! alle "p" elemente IN "ol" elementen */
+      /* verschachtelung! alle "p" elemente IN (IN= ein Leerzeichen) "ol" elementen */
       ol p {
         background:green;
       }
-      /* Klasse! alle emlemente mit klasse "haupt" */
+      /* Klasse! alle emlemente mit klasse "haupt" wie z.B in "<div class="haupt">…" */
       .haupt {
         font-family:cursive;
       }
@@ -49,15 +49,15 @@
   </head>
   
 <!--
-  hier der eigentliche inhalt der seite:
+  hier der eigentliche (später sichtbare) inhalt der seite:
 -->
 <body>
-  <!--  ein "h1" element mit der klasse "haupt"-->
+  <!--  ein "h1" element mit der klasse "haupt" (im CSS: .haupt)-->
   <h1 class="haupt">hello world</h1>
   <p>ein bisschen text mit Umläuten</p>
   
   <!-- ein "img element" mit der klasse "zentriert",
-       die "src" eigenschaft definiert den link zur bild-datei -->
+       die "src"-Eigenschaft definiert den link zur bild-datei -->
   <img class="zentriert" src="http://static.giantbomb.com/uploads/original/1/17172/1419618-unicorn2.jpg">
 
   <!-- ein "h2" element - Überschrift 2. Ordnung-->
@@ -67,13 +67,13 @@
     <!-- ein List Item -->
     <li>
       ein 
-      <strong class="haupt">
+      <strong class="haupt"> <!--strong ist eine starke hervorhebung, z.B. durch fetten Text-->
         listenpunkt
       </strong>
     </li>
     <li>
       <p>
-        noch ein <em>weiterer</em> listenpunkt
+        noch ein <em>weiterer</em> listenpunkt <!--strong ist eine hervorhebung, z.B. durch kursiven ("schrängen") Text-->
       </p>
     </li>
     <li>
